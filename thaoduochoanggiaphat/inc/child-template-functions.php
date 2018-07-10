@@ -20,7 +20,11 @@ if ( ! function_exists( 'nns_storefront_recent_products_args' ) ) {
 if ( ! function_exists( 'custom_slider_storefront' ) ) {
 	function custom_slider_storefront() {
 		if ( is_front_page() ) {
-			echo do_shortcode( "[metaslider id=48]" );
+			$slider_id =  get_post_meta(get_the_ID() , 'metaslider_id' ,true);
+			if($slider_id){
+				$short_code = "[metaslider id=".$slider_id."]";
+				echo do_shortcode( $short_code );
+			}
 		} else {
 			return;
 		}
