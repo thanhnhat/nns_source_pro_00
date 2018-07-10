@@ -1,0 +1,41 @@
+/*
+Theme Name:   Thao duoc Hoang Gia Phat
+Theme URI:    http://sitename.com/storefront/
+Description:  Storefront Child Theme
+Author:       NNS Team
+Author URI:   http://devnns.cf
+Template:     storefront
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         light, dark, full-width, responsive-layout, accessibility-ready
+Text Domain:  storefront-child
+*/
+/*Theme customisations start here*/
+
+ul.nns-card {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 1.618em 1em;
+}
+ul.nns-card>li{
+    padding: 5px 10px;
+    background-color: #189eff;
+    border-radius: 5px;
+}
+ul.nns-card>li>a{
+    color: white !important;
+}
+.nns-card .nns-icon {
+    margin-right: 5px;
+}
+.nns-card .nns-count{
+    margin-left: 10px;
+    background-color: #ffad13;
+    padding: 3px 8px;
+    border-radius: 5px;
+    color: black;
+}
+
+
