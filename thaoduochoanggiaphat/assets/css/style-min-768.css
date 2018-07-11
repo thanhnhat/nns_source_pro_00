@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+  .site-header .site-branding {
+    margin-right: 4% !important;
+    max-width: 135px !important;
+  }
+
+  ul.nns-card {
+    display: inline-block !important;
+  }
+
+  .site-search {
+    width: calc(100% - 4% - 135px - 186px) !important;
+
+  }
+  .site-header .site-branding img {
+    max-width: 120px;
+  }
+
+}

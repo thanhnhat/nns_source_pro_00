@@ -12,12 +12,20 @@ Tags:         light, dark, full-width, responsive-layout, accessibility-ready
 Text Domain:  storefront-child
 */
 /*Theme customisations start here*/
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700);
+@import "assets/css/style-min-768.css";
 
+body, button, input, textarea {
+    font-family: 'Quicksand', sans-serif !important;
+}
+a:focus {
+  outline: none !important;
+}
 ul.nns-card {
     list-style: none;
-    display: inline-block;
+    display: none;
     margin: 0;
-    padding: 1.618em 1em;
+    padding: 1.618em 0 1.618em 1em ;
 }
 ul.nns-card>li{
     padding: 5px 10px;
@@ -37,5 +45,30 @@ ul.nns-card>li>a{
     border-radius: 5px;
     color: black;
 }
+.site-branding {
+    max-width: 120px !important;
+    display: block !important;
+    margin-right: 20px !important;
+}
+.site-search {
+    float: none !important;
+    display: inline-block !important;
+    margin-top: 15px !important;
+    width: calc(100% - 120px - 20px - 5px);
+}
+.input-text, input[type=email], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], textarea {
+    box-shadow: none!important;
+    background-color: unset !important;
+}
+.site-search .widget_product_search form input[type=search], .site-search .widget_product_search form input[type=text] {
+    border-radius: 8px;
+    border: 1px solid orange;
+}
+.site-header .site-branding img {
+    max-width: 120px;
+}
+
+
+
 
 
