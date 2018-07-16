@@ -21,6 +21,20 @@ body, button, input, textarea {
 a:focus {
   outline: none !important;
 }
+.site-header{
+    border-bottom: none;
+}
+.primary-navigation li.menu-item > a:hover{
+    color: #ff7919;
+}
+.primary-navigation li.menu-item.current-menu-item > a{
+    pointer-events: none;
+    color: #ff7919 !important;
+}
+.nav-menu li.current_page_ancestor > a,
+.nav-menu li.current-menu-ancestor > a {
+    color: #ff7919 !important;
+}
 ul.nns-card {
     list-style: none;
     display: none;
@@ -68,6 +82,26 @@ ul.nns-card>li>a{
     max-width: 120px;
 }
 
+/*PRODUCT LIST*/
+ul.products li.product .price {
+  color: #ff8b13;
+}
+ul.products li.product img {
+  margin: 0 auto 1em;
+}
+ul.products li.product .button {
+  margin-bottom: 1.236em;
+  border-radius: 5px;
+  font-weight: 500;
+}
+ul.products li.product .button:hover {
+  background-color: #ff8b13;
+  color: white;
+}
+
+ul.products li.product .woocommerce-loop-product__title, ul.products li.product h2, ul.products li.product h3 {
+  margin-bottom: 0.3em;
+}
 
 
 
