@@ -14,86 +14,105 @@ Text Domain:  storefront-child
 /*Theme customisations start here*/
 @import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700);
 @import "assets/css/style-min-768.css";
+@import "assets/css/style-max-768.css";
 
 body, button, input, textarea {
-    font-family: 'Quicksand', sans-serif !important;
+  font-family: 'Quicksand', sans-serif !important;
 }
+
 a:focus {
   outline: none !important;
 }
-.site-header{
-    border-bottom: none;
+
+.site-header {
+  border-bottom: none;
 }
-.primary-navigation li.menu-item > a:hover{
-    color: #ff7919;
+
+.primary-navigation li.menu-item > a:hover {
+  color: #ff7919;
 }
-.primary-navigation li.menu-item.current-menu-item > a{
-    pointer-events: none;
-    color: #ff7919 !important;
+
+.primary-navigation li.menu-item.current-menu-item > a {
+  pointer-events: none;
+  color: #ff7919 !important;
 }
+
 .nav-menu li.current_page_ancestor > a,
 .nav-menu li.current-menu-ancestor > a {
-    color: #ff7919 !important;
+  color: #ff7919 !important;
 }
+
 ul.nns-card {
-    list-style: none;
-    display: none;
-    margin: 0;
-    padding: 1.618em 0 1.618em 1em ;
+  list-style: none;
+  display: none;
+  margin: 0;
+  padding: 1.618em 0 1.618em 1em;
 }
-ul.nns-card>li{
-    padding: 5px 10px;
-    background-color: #189eff;
-    border-radius: 5px;
+
+ul.nns-card > li {
+  padding: 5px 10px;
+  background-color: #189eff;
+  border-radius: 5px;
 }
-ul.nns-card>li>a{
-    color: white !important;
+
+ul.nns-card > li > a {
+  color: white !important;
 }
+
 .nns-card .nns-icon {
-    margin-right: 5px;
+  margin-right: 5px;
 }
-.nns-card .nns-count{
-    margin-left: 10px;
-    background-color: #ffad13;
-    padding: 3px 8px;
-    border-radius: 5px;
-    color: black;
+
+.nns-card .nns-count {
+  margin-left: 10px;
+  background-color: #ffad13;
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: black;
 }
+
 .site-branding {
-    max-width: 120px !important;
-    display: block !important;
-    margin-right: 20px !important;
+  max-width: 120px !important;
+  display: block !important;
+  margin-right: 20px !important;
 }
+
 .site-search {
-    float: none !important;
-    display: inline-block !important;
-    margin-top: 15px !important;
-    width: calc(100% - 120px - 20px - 5px);
+  float: none !important;
+  display: inline-block !important;
+  margin-top: 15px !important;
+  width: calc(100% - 120px - 20px - 5px);
 }
+
 .input-text, input[type=email], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], textarea {
-    box-shadow: none!important;
-    background-color: unset !important;
+  box-shadow: none !important;
+  background-color: unset !important;
 }
+
 .site-search .widget_product_search form input[type=search], .site-search .widget_product_search form input[type=text] {
-    border-radius: 8px;
-    border: 1px solid orange;
+  border-radius: 8px;
+  border: 1px solid orange;
 }
+
 .site-header .site-branding img {
-    max-width: 120px;
+  max-width: 120px;
 }
 
 /*PRODUCT LIST*/
 ul.products li.product .price {
   color: #ff8b13;
 }
+
 ul.products li.product img {
   margin: 0 auto 1em;
 }
+
 ul.products li.product .button {
   margin-bottom: 1.236em;
   border-radius: 5px;
   font-weight: 500;
 }
+
 ul.products li.product .button:hover {
   background-color: #ff8b13;
   color: white;
@@ -103,6 +122,27 @@ ul.products li.product .woocommerce-loop-product__title, ul.products li.product 
   margin-bottom: 0.3em;
 }
 
+.site-footer {
+  border-top: 2px solid #23D23B;
+  background-color: #333333;
+  padding-bottom: 5.5em;
+}
 
+.footer-info-widget p {
+  margin: 0;
+  padding: 0 3px;
+  color: white;
+}
 
+.footer-column-2 {
+  text-align: center;
+}
 
+.footer-column-2 p {
+  padding-bottom: 0;
+  margin-bottom: -5px;
+}
+.footer-column-2 iframe {
+  height: 100%;
+  width: 100%;
+}

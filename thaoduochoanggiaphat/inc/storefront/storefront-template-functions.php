@@ -12,4 +12,6 @@ function handle_parent_action() {
 	remove_action('storefront_header','storefront_product_search', 40);
 	add_action('storefront_header','storefront_product_search', 39);
 	
+	remove_action( 'storefront_footer', 'storefront_footer_widgets', 10 );
+	remove_action( 'storefront_footer', 'storefront_credit', 20 );
 }
