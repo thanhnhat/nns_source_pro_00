@@ -275,3 +275,7 @@ div.cart_totals table, div.cart_totals th, div.cart_totals td {
 input[name="coupon_code"] {
     border: 1px solid rgba(235, 235, 235, 1);
 }
+a.remove:before {
+    padding-left: 2.5px;
+    content: "\f2ed";
+}
