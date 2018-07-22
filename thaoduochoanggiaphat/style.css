@@ -152,10 +152,10 @@ table.cart td.product-remove a.remove {
   top: auto;
   right: auto;
 }
-table.cart .product-thumbnail img {
-  max-width: 8em;
-  height: auto;
-}
+/*table.cart .product-thumbnail img {*/
+  /*max-width: 8em;*/
+  /*height: auto;*/
+/*}*/
 table tbody td {
     background-color: #ffffff;
 }
@@ -165,9 +165,7 @@ table td, table th {
     vertical-align: middle;
 }
 table.cart td, table.cart th {
-    padding: 0.1em;
-    border-right: 1px solid rgba(235, 235, 235, 1);
-    border-bottom: 1px solid rgba(235, 235, 235, 1);
+     padding: 0.1em;
 }
 table.cart tr:last-child td {
     padding-top: 0.5em;
@@ -176,9 +174,6 @@ table.cart tr:last-child td {
 table.cart td.product-remove {
     /* display: table-cell; */
     padding: 0.5em;
-    border-bottom: 1px solid rgba(235, 235, 235, 1);
-    border-left: 1px solid rgba(235, 235, 235, 1);
-    border-right: 1px solid rgba(235, 235, 235, 1);
 }
 table.shop_table thead th {
     padding: 0.3em;
@@ -239,13 +234,6 @@ table.cart td.actions input {
 .cart-collaterals h2 {
     font-size: 1.618em;
     color: #f58108;
-}
-table.cart .product-thumbnail img {
-    max-width: 118px;
-    height: auto;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-    border-radius: 5px;
 }
 td.product-thumbnail {
     width: 128px;

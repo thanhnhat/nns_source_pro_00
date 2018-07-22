@@ -123,4 +123,26 @@
     margin-top: -30px;
   }
 
+  table.cart td.product-remove {
+    /* display: table-cell; */
+    padding: 0.5em;
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+    border-left: 1px solid rgba(235, 235, 235, 1);
+    border-right: 1px solid rgba(235, 235, 235, 1);
+  }
+  table.cart td, table.cart th {
+    padding: 0.1em;
+    border-right: 1px solid rgba(235, 235, 235, 1);
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+  }
+  table tbody tr:nth-child(2n) td {
+    background-color: #ffffff;
+  }
+  table.cart .product-thumbnail img {
+    max-width: 118px;
+    height: auto;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-radius: 5px;
+  }
 }
