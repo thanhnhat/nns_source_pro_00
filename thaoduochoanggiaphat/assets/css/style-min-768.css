@@ -50,6 +50,15 @@
     width: 50%;
     float: left;
   }
-
-
+  table.shop_table_responsive tbody tr td, table.shop_table_responsive tbody tr th {
+    text-align: center;
+  }
+  .storefront-breadcrumb {
+    padding: 1.41575em 0;
+    margin: 0;
+  }
+  .storefront-full-width-content .woocommerce-products-header, .storefront-full-width-content.woocommerce-account .entry-header, .storefront-full-width-content.woocommerce-cart .entry-header, .storefront-full-width-content.woocommerce-checkout .entry-header {
+    text-align: center;
+    padding: 0 0 2.5em;
+  }
 }

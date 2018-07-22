@@ -146,3 +146,132 @@ ul.products li.product .woocommerce-loop-product__title, ul.products li.product 
   height: 100%;
   width: 100%;
 }
+table.cart td.product-remove a.remove {
+  float: none;
+  position: relative;
+  top: auto;
+  right: auto;
+}
+table.cart .product-thumbnail img {
+  max-width: 8em;
+  height: auto;
+}
+table tbody td {
+    background-color: #ffffff;
+}
+table td, table th {
+    padding: 1em 1.41575em;
+    text-align: left;
+    vertical-align: middle;
+}
+table.cart td, table.cart th {
+    padding: 0.1em;
+    border-right: 1px solid rgba(235, 235, 235, 1);
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+}
+table.cart tr:last-child td {
+    padding-top: 0.5em;
+    border: none;
+}
+table.cart td.product-remove {
+    /* display: table-cell; */
+    padding: 0.5em;
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+    border-left: 1px solid rgba(235, 235, 235, 1);
+    border-right: 1px solid rgba(235, 235, 235, 1);
+}
+table.shop_table thead th {
+    padding: 0.3em;
+    background-color: #99cd4d;
+}
+a.remove {
+    display: block;
+    width: 0.04em;
+    height: 1.618em;
+    line-height: 1.618;
+    font-weight: 400;
+    text-indent: -9999px;
+    position: relative;
+}
+.alpha, h1 {
+    font-size: 2.617924em;
+    line-height: 1.214;
+    letter-spacing: -1px;
+    color: #f58108;
+}
+thead th {
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+}
+div.coupon button[name="apply_coupon"] {
+    background-color: #f58108;
+    border-color: #eeeeee;
+    color: #ffffff;
+    border-radius: 5px;
+}
+div.coupon button[name="apply_coupon"]:hover {
+    background-color: #ff8b13;
+    border-color: #eeeeee;
+    color: #ffffff;
+    border-radius: 5px;
+}
+button[name="update_cart"] {
+    background-color: #f58108;
+    border-color: #eeeeee;
+    color: #ffffff;
+    border-radius: 5px;
+}
+button[name="update_cart"]:hover {
+    background-color: #ff8b13;
+    border-color: #eeeeee;
+    color: #ffffff;
+    border-radius: 5px;
+}
+table.cart td.actions input {
+    display: inline-block;
+    background-color: #ebebeb;
+    width: auto;
+    margin: 0;
+    border-radius: 5px;
+}
+.cart-collaterals h2 {
+    font-size: 1.618em;
+    color: #f58108;
+}
+table.cart .product-thumbnail img {
+    max-width: 118px;
+    height: auto;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-radius: 5px;
+}
+td.product-thumbnail {
+    width: 128px;
+}
+thead th {
+    text-align: center;
+}
+table tr.cart-subtotal th, table tr.order-total th{
+    background-color: #99cd4d;
+    color: #ffffff;
+}
+div.wc-proceed-to-checkout a.checkout-button {
+    background-color: #f58108;
+    border-color: #eeeeee;
+    color: #ffffff;
+    border-radius: 5px;
+}
+div.wc-proceed-to-checkout a.checkout-button:hover {
+    background-color: #ff8b13;
+    border-color: #eeeeee;
+    color: #ffffff;
+    border-radius: 5px;
+}
+div.cart_totals table, div.cart_totals th, div.cart_totals td {
+    border: 0.5px solid rgba(235, 235, 235, 1);
+}
+input[name="coupon_code"] {
+    border: 1px solid rgba(235, 235, 235, 1);
+}
