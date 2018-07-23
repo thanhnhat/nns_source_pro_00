@@ -164,21 +164,9 @@ table td, table th {
     text-align: left;
     vertical-align: middle;
 }
-table.cart td, table.cart th {
-    padding: 0.1em;
-    border-right: 1px solid rgba(235, 235, 235, 1);
-    border-bottom: 1px solid rgba(235, 235, 235, 1);
-}
 table.cart tr:last-child td {
     padding-top: 0.5em;
     border: none;
-}
-table.cart td.product-remove {
-    /* display: table-cell; */
-    padding: 0.5em;
-    border-bottom: 1px solid rgba(235, 235, 235, 1);
-    border-left: 1px solid rgba(235, 235, 235, 1);
-    border-right: 1px solid rgba(235, 235, 235, 1);
 }
 table.shop_table thead th {
     padding: 0.3em;
@@ -360,6 +348,7 @@ div#order_review tfoot{
     /*border-top: 3px solid white;*/
     /*box-shadow: 0 1px 1px -1px grey inset;*/
 }
+
 
 
 
