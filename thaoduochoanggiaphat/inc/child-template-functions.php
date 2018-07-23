@@ -3,6 +3,13 @@ function nss_theme_slug_setup() {
 	load_child_theme_textdomain( 'nns', get_stylesheet_directory() . '/languages' );
 }
 
+if(!function_exists('nns_enqueue_scripts')){
+	function nns_enqueue_scripts()
+	{
+		wp_enqueue_script('child_theme_script_handle', get_stylesheet_directory_uri().'/assets/js/main.js', array('jquery'));
+	}
+}
+
 function change_existing_currency_symbol( $currency_symbol, $currency ) {
 	switch ( $currency ) {
 		case 'VND':
@@ -143,6 +150,44 @@ if ( ! function_exists( 'nns_register_footer_sidebar' ) ) {
 		register_sidebar( $sidebar_args['nns_footer_column_1'] );
 		register_sidebar( $sidebar_args['nns_footer_column_2'] );
 	}
+}
+if(!function_exists('nns_sticky_single_add_to_cart')){
+	function nns_sticky_single_add_to_cart() {
+	global $product;
+	
+	if ( class_exists( 'Storefront_Sticky_Add_to_Cart' ) || true !== get_theme_mod( 'storefront_sticky_add_to_cart' ) ) {
+		return;
+	}
+	
+	if ( ! is_product() ) {
+		return;
+	}
+	
+	$params = apply_filters( 'storefront_sticky_add_to_cart_params', array(
+		'trigger_class' => 'entry-summary'
+	) );
+	
+	wp_localize_script( 'storefront-sticky-add-to-cart', 'storefront_sticky_add_to_cart_params', $params );
+	
+	wp_enqueue_script( 'storefront-sticky-add-to-cart' );
+	?>
+	<section class="storefront-sticky-add-to-cart">
+		<div class="col-full">
+			<div class="storefront-sticky-add-to-cart__content">
+		  <?php echo wp_kses_post( woocommerce_get_product_thumbnail() ); ?>
+				<div class="storefront-sticky-add-to-cart__content-product-info">
+					<span class="storefront-sticky-add-to-cart__content-title"><?php _e( 'Bạn đang xem: ', 'thaoduochoanggiaphat' ); ?> <strong><?php the_title(); ?></strong></span>
+					<span class="storefront-sticky-add-to-cart__content-price"><?php echo wp_kses_post( $product->get_price_html() ); ?></span>
+			<?php echo wp_kses_post( wc_get_rating_html( $product->get_average_rating() ) ); ?>
+				</div>
+				<a href="<?php echo esc_url( $product->add_to_cart_url() ); ?>" class="storefront-sticky-add-to-cart__content-button button alt">
+			<?php echo esc_attr( $product->add_to_cart_text() ); ?>
+				</a>
+			</div>
+		</div>
+	</section><!-- .storefront-sticky-add-to-cart -->
+	<?php
+}
 }
 
 //Widget

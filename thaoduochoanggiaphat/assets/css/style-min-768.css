@@ -61,4 +61,88 @@
     text-align: center;
     padding: 0 0 2.5em;
   }
+
+  /*SINGLE PRODUCT*/
+
+  .storefront-full-width-content.single-product div.product .summary {
+    width: 40%;
+  }
+
+  .storefront-full-width-content.single-product div.product .woocommerce-product-gallery {
+    width: 50%;
+  }
+  .single-product div.product .woocommerce-product-gallery .flex-viewport {
+    margin-bottom: 0;
+    width: 78%;
+    float: right;
+    height: 430px !important;
+    border-radius: 5px;
+  }
+
+
+
+  .single-product div.product .woocommerce-product-gallery .flex-control-thumbs {
+    width: 17%;
+    max-height: 430px !important;
+    overflow: auto;
+    float: left;
+    padding: 5px 5px 5px 0;
+    margin-left: 2%;
+  }
+  .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li:last-child{
+    margin-bottom: 0;
+  }
+
+
+  .single-product div.product .woocommerce-product-gallery .flex-control-thumbs::-webkit-scrollbar {
+    width: 2px;
+    background-color: white;
+  }
+  .single-product div.product .woocommerce-product-gallery .flex-control-thumbs::-webkit-scrollbar-thumb {
+    background-color: #6e6e6e;
+    outline: 1px solid #333;
+  }
+
+
+  .storefront-full-width-content.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li {
+    width: 100%;
+    float: left;
+  }
+
+
+  .single-product .storefront-breadcrumb {
+    margin-bottom: 0.706326em;
+  }
+  .storefront-full-width-content.single-product div.product .summary {
+    margin-bottom: 1em;
+  }
+
+  #reviews {
+    border-top: 1px solid green;
+    padding-top: 10px;
+    margin-top: -30px;
+  }
+
+  table.cart td.product-remove {
+    /* display: table-cell; */
+    padding: 0.5em;
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+    border-left: 1px solid rgba(235, 235, 235, 1);
+    border-right: 1px solid rgba(235, 235, 235, 1);
+  }
+  table.cart td, table.cart th {
+    padding: 0.1em;
+    border-right: 1px solid rgba(235, 235, 235, 1);
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+  }
+  table tbody tr:nth-child(2n) td {
+    background-color: #ffffff;
+  }
+  table.cart .product-thumbnail img {
+    max-width: 118px;
+    height: auto;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-radius: 5px;
+  }
 }
