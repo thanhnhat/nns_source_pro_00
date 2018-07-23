@@ -279,3 +279,89 @@ a.remove:before {
     padding-left: 2.5px;
     content: "\f2ed";
 }
+
+/* =============================Giỏ Hàng================================== */
+/*Input type="text"*/
+input[type="text"], input[type="email"], input[type="tel"]{
+  padding: .5em;
+  border: 1px solid;
+    border-color: #ebedf2 !important;
+  color: #575962 !important;
+  border-radius: 5px !important;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+    border-color: orange !important;
+}
+
+/*Input type combobox*/
+
+/*.select2-container--default.select2-selection--single:focus{*/
+    /*border-color: orange !important;*/
+/*}*/
+.select2-container .select2-selection--single{
+    height: 2.7rem;
+    border-radius: 5px !important;
+}
+
+.select2-container .select2-selection--single:focus{
+    border-color: orange !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 41px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 10px;
+}
+
+/*text area*/
+textarea{
+    border: 1px solid #ced4da !important;
+    border-radius: .25rem;
+    font-family: sans-serif,Arial;
+}
+/*button payment*/
+button.alt{
+     background-color: #f58108 !important;
+    border-radius: 5px;
+ }
+button.alt:hover{
+    background-color: #ff8b13 !important;
+}
+
+
+/*title heading detail*/
+.gamma, h3 {
+    color: #f58108 !important;
+}
+
+
+/*Table */
+#order_review  table{
+    border-spacing: 0;
+    width: 100%;
+    border-collapse: separate !important;
+}
+div#order_review table, div#order_review th, div.order_review td{
+    border: 0.5px solid rgba(235, 235, 235, 1);
+}
+table tr.cart-subtotal th, table tr.order-total th{
+    text-align: center;
+}
+
+div.woocommerce-billing-fields .required {
+    text-decoration: none;
+}
+
+div#order_review tfoot{
+    /*sua lai*/
+    /*check giao dien mobile*/
+    /*margin-top: 10px;*/
+    /*border-top: 3px solid white;*/
+    /*box-shadow: 0 1px 1px -1px grey inset;*/
+}
+
+
+
+
+
