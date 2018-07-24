@@ -13,7 +13,7 @@
         border-top: 0;
         /*padding: 0.5em;*/
         float: right;
-        margin-top: 5px;
+        margin-top: 12px;
         margin-bottom: -44px;
         width: 33px;
         height: 28px;
@@ -30,7 +30,7 @@
 
     table.cart tr:first-child td.product-remove {
         border-top-width: 0;
-        margin-top: 5px;
+        margin-top: 15px;
         margin-bottom: -44px;
     }
 
@@ -47,7 +47,7 @@
     }
 
     table.cart .product-thumbnail img {
-        margin-top: 9px;
+        margin-top: 2px;
         max-width: 88px;
         height: auto;
         padding-top: 0.2em;
@@ -56,31 +56,36 @@
     }
 
     table.cart td.product-name {
-        font-size: 14px;
+        width: calc(100% - 128px);
+        text-align: left;
+        font-size: 17px;
         float: right;
-        width: 62%;
-        margin-top: -101px;
+        margin-top: -113px;
     }
-
     table.cart td.product-price {
+        display: none;
         font-size: 14px;
         float: right;
-        width: 62%;;
         margin-top: -82px;
     }
 
     table.cart td.product-quantity {
+        width: calc(100% - 128px);
+        text-align: left;
         font-size: 14px;
         float: right;
-        width: 62%;;
-        margin-top: -61px;
+        margin-top: -85px;
     }
 
     table.cart td.product-subtotal {
+        width: calc(100% - 128px);
+        text-align: left;
         font-size: 14px;
         float: right;
-        width: 62%;;
-        margin-top: -27px;
+        margin-top: -44px;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(225,64,28,1);
     }
 
     table.cart td, table.cart th {
@@ -93,7 +98,21 @@
         text-align: center;
     }
     td.product-quantity input[type="number"] {
-        height: 34px;
+        height: 27px;
+        width: 27px !important;
+    }
+    a.remove:before {
+        padding-left: 2.5px;
+        content: "\f00d";
+    }
+    table.shop_table_responsive tr td::before {
+        display: none;
+        content: attr(data-title) ": ";
+        font-weight: 600;
+        float: left;
+    }
+    td span.n-added {
+        padding: .25em;
     }
 }
 

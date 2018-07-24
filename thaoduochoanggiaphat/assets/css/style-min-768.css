@@ -122,7 +122,10 @@
     padding-top: 10px;
     margin-top: -30px;
   }
-
+  a.remove:before {
+    padding-left: 2.5px;
+    content: "\f2ed";
+  }
   table.cart td.product-remove {
     /* display: table-cell; */
     padding: 0.5em;
@@ -155,5 +158,8 @@
   }
   td.product-quantity input[type="number"] {
     height: 38px;
+  }
+  td span.n-added {
+    padding: .5em;
   }
 }
