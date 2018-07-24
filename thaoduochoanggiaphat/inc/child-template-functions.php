@@ -2,7 +2,6 @@
 function nss_theme_slug_setup() {
 	load_child_theme_textdomain( 'nns', get_stylesheet_directory() . '/languages' );
 }
-
 if(!function_exists('nns_enqueue_scripts')){
 	function nns_enqueue_scripts()
 	{
