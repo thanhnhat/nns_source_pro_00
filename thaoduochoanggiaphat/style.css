@@ -366,6 +366,7 @@ body::-webkit-scrollbar-thumb{
     color: #ffad13;
 }
 .storefront-sticky-add-to-cart__content .storefront-sticky-add-to-cart__content-button, .summary .single_add_to_cart_button {
+    margin-top: -0.5px;
     background-color: #f58108;
     border-radius: 5px;
 }
@@ -379,6 +380,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 input[type="number"] {
+    height: 44px;
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     appearance: textfield;

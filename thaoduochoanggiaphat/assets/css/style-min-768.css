@@ -153,4 +153,7 @@
   .storefront-full-width-content .site-main ul.products.columns-3 li.product:hover {
     box-shadow: 0 0 10px 3px rgba(69, 65, 78, 0.16);
   }
+  td.product-quantity input[type="number"] {
+    height: 38px;
+  }
 }
