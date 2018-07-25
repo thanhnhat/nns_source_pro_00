@@ -150,7 +150,7 @@
         pointer-events: none;
         color: #ff7919 !important;
     }
-    .site-search {
+    footer.site-footer .site-search {
         width: 100% !important;
     }
 }
