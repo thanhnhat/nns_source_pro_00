@@ -114,5 +114,41 @@
     td span.n-added {
         padding: .25em;
     }
+    header.site-header div.site-search .widget_product_search form, .widget_search form {
+        display: none;
+    }
+    header.site-header button.menu-toggle:after, header.site-header button.menu-toggle:before, header.site-header button.menu-toggle span:before {
+        background-color: rgba(255, 171, 8, 0.92);
+    }
+    .storefront-handheld-footer-bar ul li.cart > a::before {
+        content: "\f07a";
+    }
+    .storefront-handheld-footer-bar ul li.cart .count, button.menu-toggle:after, button.menu-toggle:before, button.menu-toggle span:before {
+        background-color: #333333eb;
+    }
+    .storefront-handheld-footer-bar ul li.cart .count {
+        margin-top: -6px;
+        margin-left: 3px;
+    }
+    button.menu-toggle, button.menu-toggle:hover {
+        color: #ff8b13;
+        border-color: #ff8b13;
+    }
+    .page-template-template-homepage:not(.has-post-thumbnail) .site-main {
+        padding-top: 1em;
+    }
+    .main-navigation ul {
+        text-align: right;
+    }
+    .site-footer .storefront-handheld-footer-bar a:not(.button) {
+        color: #ff8b13;
+    }
+    nav.main-navigation .toggled ul.menu li.current_page_item {
+        color: #ff8b13;
+    }
+    div.menu ul li.current_page_item a {
+        pointer-events: none;
+        color: #ff7919 !important;
+    }
 }
 
