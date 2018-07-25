@@ -150,5 +150,8 @@
         pointer-events: none;
         color: #ff7919 !important;
     }
+    .site-search {
+        width: 100% !important;
+    }
 }
 
