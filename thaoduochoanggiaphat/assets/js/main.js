@@ -2,6 +2,7 @@
   'use strict';
   $(function () {
 	customInputQuantity();
+	changeMobileFooterIconColor();
 
 	$('body').on("updated_wc_div",function(){
 		customInputQuantity();
@@ -61,4 +62,15 @@
 	$(ref).trigger('input');
   }
 
+  function changeMobileFooterIconColor() {
+	let url = window.location.href;
+	let items = document.querySelectorAll('.storefront-handheld-footer-bar li:not(.search) a');
+	items.forEach(function(ele) {
+		if(ele.href == url) {
+			//set Color for Icon
+			//console.log('True');
+			ele.parentElement.classList.add('footer-orange-icon');
+		}
+	  });
+  }
 })(jQuery);

@@ -124,7 +124,7 @@
         content: "\f07a";
     }
     .storefront-handheld-footer-bar ul li.cart .count, button.menu-toggle:after, button.menu-toggle:before, button.menu-toggle span:before {
-        background-color: #333333eb;
+        background-color: #ff8b13;
     }
     .storefront-handheld-footer-bar ul li.cart .count {
         margin-top: -6px;
@@ -138,10 +138,11 @@
         padding-top: 1em;
     }
     .main-navigation ul {
+        margin-top: -10px;
         text-align: right;
     }
     .site-footer .storefront-handheld-footer-bar a:not(.button) {
-        color: #ff8b13;
+        color: #333333;
     }
     nav.main-navigation .toggled ul.menu li.current_page_item {
         color: #ff8b13;
@@ -152,6 +153,24 @@
     }
     footer.site-footer .site-search {
         width: 100% !important;
+    }
+    .main-navigation div.menu {
+        position: absolute;
+        top: 115px;
+        right: 0;
+        padding-right: 25px;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 4px 2px -2px rgba(0,0,0,.7);
+    }
+    .storefront-handheld-footer-bar li.search.active a {
+        color: #ff8b13;
+    }
+    .storefront-handheld-footer-bar li.footer-orange-icon a {
+        color: #ff8b13 !important;
+    }
+    .storefront-handheld-footer-bar li.footer-orange-icon a span {
+        background-color: #333333 !important;
     }
 }
 
