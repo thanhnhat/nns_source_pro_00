@@ -154,7 +154,7 @@
     footer.site-footer .site-search {
         width: 100% !important;
     }
-    .main-navigation div.menu {
+    .main-navigation div.handheld-navigation {
         position: absolute;
         top: 115px;
         right: 0;
@@ -171,6 +171,21 @@
     }
     .storefront-handheld-footer-bar li.footer-orange-icon a span {
         background-color: #333333 !important;
+    }
+    .handheld-navigation .dropdown-toggle {
+        top: 5px;
+        right: 60px;
+    }
+    .handheld-navigation ul.menu .sub-menu {
+        margin-left: 0;
+        background-color: #ff62050f;
+    }
+    .handheld-navigation ul.menu .sub-menu a {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    button:focus {
+         outline: none;
     }
 }
 
