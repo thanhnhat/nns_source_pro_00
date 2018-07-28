@@ -7,7 +7,7 @@
 	$('body').on("updated_wc_div",function(){
 		customInputQuantity();
 	});
-	
+	$('tr.cart-subtotal > th').text('Tạm tính');
   });
 
   function customInputQuantity() {
