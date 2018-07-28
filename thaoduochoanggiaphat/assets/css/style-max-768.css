@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .footer-column-1 {
         padding-bottom: 15px;
     }
@@ -45,6 +45,9 @@
     table tbody tr:nth-child(2n) td {
         background-color: #ffffff;
     }
+    table.cart .product-thumbnail{
+      padding-top: 10px;
+    }
 
     table.cart .product-thumbnail img {
         margin-top: 2px;
@@ -60,7 +63,7 @@
         text-align: left;
         font-size: 17px;
         float: right;
-        margin-top: -113px;
+        margin-top: -123px;
     }
     table.cart td.product-price {
         display: none;
@@ -80,12 +83,12 @@
     table.cart td.product-subtotal {
         width: calc(100% - 128px);
         text-align: left;
-        font-size: 14px;
         float: right;
         margin-top: -44px;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 400;
         color: rgba(225,64,28,1);
+        padding-bottom: 30px;
     }
 
     table.cart td, table.cart th {
@@ -107,12 +110,13 @@
     }
     table.shop_table_responsive tr td::before {
         display: none;
-        content: attr(data-title) ": ";
-        font-weight: 600;
-        float: left;
     }
     td span.n-added {
-        padding: .25em;
+        padding: .25em .7em;
+    }
+
+    table.cart td.actions .coupon {
+      padding-top: 10px;
     }
     header.site-header div.site-search .widget_product_search form, .widget_search form {
         display: none;
@@ -190,5 +194,9 @@
     .footer-column-2 {
         text-align: left;
     }
+    .wc-proceed-to-checkout a.checkout-button {
+      padding: 10px;
+    }
+
 }
 
