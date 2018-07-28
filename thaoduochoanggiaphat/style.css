@@ -134,17 +134,9 @@ ul.products li.product .woocommerce-loop-product__title, ul.products li.product 
   color: white;
 }
 
-.footer-column-2 {
-  text-align: center;
-}
-
 .footer-column-2 p {
   padding-bottom: 0;
   margin-bottom: -5px;
-}
-.footer-column-2 iframe {
-  height: 100%;
-  width: 100%;
 }
 table.cart td.product-remove a.remove {
   float: none;

@@ -162,4 +162,7 @@
   td span.n-added {
     padding: .5em;
   }
+  .footer-column-2 {
+    text-align: center;
+  }
 }
