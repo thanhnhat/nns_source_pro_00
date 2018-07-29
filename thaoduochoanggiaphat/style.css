@@ -337,11 +337,11 @@ div#order_review tfoot{
     /*box-shadow: 0 1px 1px -1px grey inset;*/
 }
 /*SCROLL BAR*/
-body::-webkit-scrollbar{
+body::-webkit-scrollbar, .select2-results__options::-webkit-scrollbar{
     width: 6px;
     background-color: white;
 }
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb,  .select2-results__options::-webkit-scrollbar-thumb{
     background-color: #6e6e6e;
     outline: 1px solid #333;
 }
@@ -428,7 +428,15 @@ a.restore-item:hover {
     background-color: #ff8b13;
 
 }
-
+form.woocommerce-ordering {
+  width: 250px;
+}
+form.woocommerce-ordering .select2-container--default {
+  width: 100% !important;
+}
+:focus {
+  outline: none;
+}
 
 
 
