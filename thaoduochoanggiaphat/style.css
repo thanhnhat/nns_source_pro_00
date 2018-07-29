@@ -434,6 +434,10 @@ form.woocommerce-ordering {
 form.woocommerce-ordering .select2-container--default {
   width: 100% !important;
 }
+.select2-container--default .select2-selection--single {
+  border-color: #ebedf2;
+}
+
 :focus {
   outline: none;
 }
