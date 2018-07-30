@@ -3,7 +3,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<h1>Test from child</h1>
+		<h1 style="text-align: center">Tin tức</h1>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) :

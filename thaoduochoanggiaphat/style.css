@@ -426,8 +426,22 @@ a.restore-item {
 a.restore-item:hover {
     opacity: 1;
     background-color: #ff8b13;
-
 }
+.hentry .wp-post-image {
+    float: left;
+    height: 300px;
+    width: 300px;
+}
+.hentry.type-post .entry-content {
+    padding: 20px;
+    /*border: 2px solid grey;*/
+    box-shadow: 9px 7px 35px -5px rgba(0,0,0,0.75);
+    width: 100%;
+}
+.hentry .wp-post-image {
+     margin-bottom: 0;
+}
+
 
 
 

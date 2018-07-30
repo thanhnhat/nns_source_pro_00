@@ -166,6 +166,21 @@
   .footer-column-2 {
     text-align: center;
   }
-
-
+  h2.alpha.entry-title {
+    float: right;
+    margin-top: -300px;
+    width: calc(100% - 350px);
+  }
+  .posted-on {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -265px;
+    float: right;
+    width: calc(100% - 350px);
+  }
+  div.entry-content div.post-text {
+    float: right;
+    margin-top: -225px;
+    width: calc(100% - 350px);
+  }
 }
