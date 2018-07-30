@@ -180,9 +180,11 @@
     }
 
     .posted-on {
+        margin-top: -25px;
+        float: right;
         font-size: 15px;
         font-weight: 500;
-        border-bottom: 1px solid #a4a4a4;
+        /*border-bottom: 1px solid #a4a4a4;*/
     }
 
     div.content-thumbnail, .hentry .wp-post-image{
@@ -196,5 +198,12 @@
     }
     .hentry {
         margin: 0 0 30px;
+    }
+    div.content-main .post-text {
+        margin-top: 50px;
+    }
+    div.entry-content .post-detail-content {
+        float: right;
+        width: calc(100% - 350px);
     }
 }
