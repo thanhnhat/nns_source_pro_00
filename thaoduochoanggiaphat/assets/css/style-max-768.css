@@ -198,12 +198,17 @@
       padding: 10px;
     }
     .hentry .wp-post-image {
-        height: 300px;
-        width: 300px;
+        height: 200px;
+        width: 200px;
     }
     .posted-on {
         font-size: 15px;
         font-weight: 500;
+        border-bottom: 1px solid #a4a4a4;
+    }
+
+    .hentry {
+        margin: 0 0 30px;
     }
 }
 
