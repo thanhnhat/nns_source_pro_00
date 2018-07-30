@@ -183,4 +183,10 @@
     margin-top: -225px;
     width: calc(100% - 350px);
   }
+    .hentry .wp-post-image {
+        float: left;
+        height: 300px;
+        width: 300px;
+    }
+
 }

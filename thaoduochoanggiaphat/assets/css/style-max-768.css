@@ -197,6 +197,13 @@
     .wc-proceed-to-checkout a.checkout-button {
       padding: 10px;
     }
-
+    .hentry .wp-post-image {
+        height: 300px;
+        width: 300px;
+    }
+    .posted-on {
+        font-size: 15px;
+        font-weight: 500;
+    }
 }
 
