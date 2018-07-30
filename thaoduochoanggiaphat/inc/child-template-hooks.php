@@ -10,6 +10,11 @@ add_filter( 'storefront_recent_products_args', 'nns_storefront_recent_products_a
  * Change a currency symbol
  */
 add_filter( 'woocommerce_currency_symbol', 'change_existing_currency_symbol', 10, 2 );
+/*
+ *
+ * */
+add_filter('woocommerce_checkout_fields','custom_override_checkout_fields');
+
 
 add_action( 'storefront_footer', 'nns_footer_site_info', 20 );
 add_action( 'widgets_init', 'nns_unregister_widget', 11 );

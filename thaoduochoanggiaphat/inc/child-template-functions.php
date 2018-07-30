@@ -5,9 +5,86 @@ function nss_theme_slug_setup() {
 if(!function_exists('nns_enqueue_scripts')){
 	function nns_enqueue_scripts()
 	{
+		wp_enqueue_script('child_theme_script_select2', get_stylesheet_directory_uri().'/assets/vendors/select2/select2.min.js', array('jquery'));
 		wp_enqueue_script('child_theme_script_handle', get_stylesheet_directory_uri().'/assets/js/main.js', array('jquery'));
 	}
+	
 }
+
+function custom_override_checkout_fields( $fields )
+{
+	unset($fields['billing']['billing_country']);
+	$fields['billing']['billing_city']['type'] = 'select';
+	$fields['billing']['billing_city']['options'] = array(
+		'TP Hồ Chí Minh'=>'TP Hồ Chí Minh',
+	  'Hà Nội'=>'Hà Nội',
+    'Cần Thơ'=>'Cần Thơ',
+    'Đà Nẵng'=>'Đà Nẵng',
+    'Hải Phòng'=>'Hải Phòng',
+	  'An Giang' => 'An Giang',
+		'Bà Rịa - Vũng Tàu' => 'Bà Rịa - Vũng Tàu',
+		'Bắc Giang' => 'Bắc Giang',
+		'Bắc Kạn'=>'Bắc Kạn',
+		'Bạc Liêu'=>'Bạc Liêu',
+		'Bắc Ninh'=>'Bắc Ninh',
+		'Bến Tre'=>'Bến Tre',
+		'Bình Định'=>'Bình Định',
+		'Bình Dương'=>'Bình Dương',
+		'Bình Phước'=>'Bình Phước',
+		'Bình Thuận'=>'Bình Thuận',
+		'Cà Mau'=>'Cà Mau',
+		'Cao Bằng'=>'Cao Bằng',
+		'Đắk Lắk'=>'Đắk Lắk',
+		'Đắk Nông'=>'Đắk Nông',
+		'Điện Biên'=>'Điện Biên',
+		'Đồng Nai'=>'Đồng Nai',
+		'Đồng Tháp'=>'Đồng Tháp',
+		'Gia Lai'=>'Gia Lai',
+		'Hà Giang'=>'Hà Giang',
+    'Hà Nam' => 'Hà Nam',
+		'Hà Tĩnh' => 'Hà Tĩnh',
+		'Hải Dương' => 'Hải Dương',
+		'Hậu Giang' => 'Hậu Giang',
+		'Hòa Bình' => 'Hậu Giang',
+		'Hưng Yên' => 'Hưng Yên',
+		'Khánh Hòa' => 'Khánh Hòa',
+		'Kiên Giang' => 'Khánh Hòa',
+		'Kon Tum' => 'Kon Tum',
+		'Lai Châu' => 'Lai Châu',
+		'Lâm Đồng' => 'Lâm Đồng',
+		'Lạng Sơn' => 'Lạng Sơn',
+		'Lào Cai' => 'Lào Cai',
+		'Long An' => 'Long An',
+		'Nam Định' => 'Nam Định',
+		'Nghệ An' => 'Nghệ An',
+		'Ninh Bình' => 'Ninh Bình',
+		'Ninh Thuận' => 'Ninh Thuận',
+		'Phú Thọ' => 'Phú Thọ',
+		'Quảng Bình' => 'Quảng Bình',
+		'Quảng Nam' => 'Quảng Nam',
+		'Quảng Ngãi' => 'Quảng Ngãi',
+		'Quảng Ninh' => 'Quảng Ninh',
+		'Quảng Trị' => 'Quảng Trị',
+		'Sóc Trăng' => 'Sóc Trăng',
+		'Sơn La' => 'Sơn La',
+		'Tây Ninh'=>'Tây Ninh',
+		'Thái Bình' => 'Thái Bình',
+		'Thái Nguyên' => 'Thái Nguyên',
+		'Thanh Hóa' => 'Thanh Hóa',
+		'Thừa Thiên Huế' => 'Thừa Thiên Huế',
+		'Tiền Giang' => 'Tiền Giang',
+		'Trà Vinh' => 'Trà Vinh',
+		'Tuyên Quang' => 'Tuyên Quang',
+		'Vĩnh Long' => 'Vĩnh Long',
+		'Vĩnh Phúc' => 'Vĩnh Phúc',
+		'Yên Bái' => 'Yên Bái',
+		'Phú Yên' => 'Phú Yên'
+	);
+	
+	
+	return $fields;
+}
+
 
 function change_existing_currency_symbol( $currency_symbol, $currency ) {
 	switch ( $currency ) {
@@ -21,7 +98,8 @@ function change_existing_currency_symbol( $currency_symbol, $currency ) {
 
 if ( ! function_exists( 'nns_load_parent_stylesheets' ) ) {
 	function nns_load_parent_stylesheets() {
-		wp_enqueue_style( 'fontawesome', get_stylesheet_directory_uri() . '/assets/vendors/fontawesome/css/all.css' );
+		wp_enqueue_style( 'select2css', get_stylesheet_directory_uri() . '/assets/vendors/select2/select2.min.css' );
+		wp_enqueue_style( 'see', get_stylesheet_directory_uri() . '/assets/vendors/fontawesome/css/all.css' );
 	}
 }
 
@@ -75,11 +153,12 @@ if ( ! function_exists( 'nns_storefront_cart_link' ) ) {
 	 */
 	function nns_storefront_cart_link() {
 		?>
-		<a href="<?php echo esc_url( wc_get_cart_url() ); ?>" <?php var_dump( 'test' ); ?>>
+		<a href="<?php echo esc_url( wc_get_cart_url() ); ?>">
 			<i class="fas fa-shopping-cart nns-icon"></i>
 			<span>Giỏ hàng</span>
 			<span class="nns-count"><?php echo wp_kses_data( sprintf( WC()->cart->get_cart_contents_count() ) ); ?></span>
 		</a>
+		<div class="site-header-cart" hidden></div>
 		<?php
 	}
 }
@@ -289,3 +368,4 @@ class nns_footer_info_widget extends WP_Widget {
 		return $instance;
 	}
 } // Class wpb_widget ends here
+
