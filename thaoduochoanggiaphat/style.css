@@ -434,6 +434,7 @@ a.restore-item:hover {
 }
 .hentry.type-post .entry-content {
     padding: 20px;
+    border-radius: 10px;
     /*border: 2px solid grey;*/
     box-shadow: 9px 7px 35px -5px rgba(0,0,0,0.75);
     width: 100%;
