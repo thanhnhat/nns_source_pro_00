@@ -1,4 +1,10 @@
 <?php
+function meks_remove_wp_archives(){
+	//If we are on category or tag or date or author archive
+	if( is_category() || is_tag() || is_date() || is_author() ) {
+		wp_redirect(get_permalink(get_option( 'page_for_posts' ) ));
+	}
+}
 function nss_theme_slug_setup() {
 	load_child_theme_textdomain( 'nns', get_stylesheet_directory() . '/languages' );
 }

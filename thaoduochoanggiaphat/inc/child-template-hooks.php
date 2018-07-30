@@ -24,3 +24,5 @@ add_action( 'woocommerce_after_single_product_summary', 'comments_template' , 30
 add_action( 'storefront_after_footer', 'nns_sticky_single_add_to_cart', 999);
 
 add_action('wp_enqueue_scripts', 'nns_enqueue_scripts', 100);
+add_action('template_redirect', 'meks_remove_wp_archives');
+

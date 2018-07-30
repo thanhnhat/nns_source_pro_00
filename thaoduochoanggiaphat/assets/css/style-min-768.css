@@ -48,6 +48,7 @@
     }
 
     .footer-column-1 {
+        margin-top: 28px;
         width: 50%;
         float: left;
     }
@@ -152,13 +153,11 @@
     table.cart .product-thumbnail img {
         max-width: 118px;
         height: auto;
-        padding-top: 0.2em;
-        padding-bottom: 0.2em;
         border-radius: 5px;
     }
 
     table.cart td, table.cart th {
-        padding: 0.1em;
+        padding: 5px;
         border-right: 1px solid rgba(235, 235, 235, 1);
         border-bottom: 1px solid rgba(235, 235, 235, 1);
     }
@@ -205,5 +204,8 @@
     div.entry-content .post-detail-content {
         float: right;
         width: calc(100% - 350px);
+    }
+    ul.products li.product {
+        padding-bottom: 5px;
     }
 }
