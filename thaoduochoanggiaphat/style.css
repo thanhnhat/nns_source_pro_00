@@ -125,12 +125,12 @@ ul.products li.product .woocommerce-loop-product__title, ul.products li.product 
 .site-footer {
     border-top: 2px solid #23D23B;
     background-color: #333333;
-    padding-bottom: 5.5em;
+    /*padding-bottom: 5.5em;*/
 }
 
 .footer-info-widget p {
     margin: 0;
-    padding: 0 3px;
+    /*padding: 0 3px;*/
     color: white;
 }
 
@@ -398,7 +398,7 @@ body::-webkit-scrollbar-thumb, .select2-results__options::-webkit-scrollbar-thum
 }
 
 input[type="number"] {
-    height: 44px;
+    height: 43.5px;
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     appearance: textfield;

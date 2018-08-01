@@ -39,17 +39,28 @@
     .site-footer {
         padding-bottom: 1.618em !important;
     }
+    .footer-column-3 {
+        width: 30%;
+        float: right;
+        height: 130px;
+        /*border-left: 1px solid white;*/
+        /*padding-left: 20px;*/
+        margin-right: 85px;
+        margin-top: 5px;
+    }
 
     .footer-column-2 {
-        width: 50%;
+        margin-top: 5px;
+        width: 30%;
         float: right;
-        border-left: 1px solid white;
-        padding-left: 20px;
+        /*border-left: 1px solid white;*/
+        /*padding-left: 20px;*/
     }
 
     .footer-column-1 {
-        margin-top: 28px;
-        width: 50%;
+        font-size: 15px;
+        margin-top: 22px;
+        width: 30%;
         float: left;
     }
 
@@ -175,9 +186,12 @@
     }
 
     .footer-column-2 {
-        text-align: center;
+        text-align: right;
     }
 
+    .footer-column-3 {
+        text-align: right;
+    }
     .posted-on {
         margin-top: -25px;
         float: right;
@@ -207,5 +221,15 @@
     }
     ul.products li.product {
         padding-bottom: 5px;
+    }
+    .site-footer .col-full {
+        max-width: 100%;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        padding: 0 2.617924em;
+        box-sizing: content-box;
+    }
+    .site {
+        overflow: hidden;
     }
 }

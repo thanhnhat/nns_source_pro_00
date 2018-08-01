@@ -192,6 +192,13 @@ if ( ! function_exists( 'nns_footer_site_info' ) ) {
 				}
 				?>
 			</div>
+			<div class="footer-column-3" >
+				<?php
+				if ( is_active_sidebar( 'nns-footer-3' ) ) {
+					dynamic_sidebar( 'nns-footer-3' );
+				}
+				?>
+			</div>
 		</div><!-- .site-info -->
 		<?php
 	}
@@ -231,8 +238,18 @@ if ( ! function_exists( 'nns_register_footer_sidebar' ) ) {
 			'after_title'   => '</span>',
 			'description'   => '',
 		);
+		$sidebar_args['nns_footer_column_3'] = array(
+			'name'          => 'Footer Column 3',
+			'id'            => 'nns-footer-3',
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+			'before_title'  => '<span style="display: none;">',
+			'after_title'   => '</span>',
+			'description'   => '',
+		);
 		register_sidebar( $sidebar_args['nns_footer_column_1'] );
 		register_sidebar( $sidebar_args['nns_footer_column_2'] );
+		register_sidebar( $sidebar_args['nns_footer_column_3'] );
 	}
 }
 if(!function_exists('nns_sticky_single_add_to_cart')){
