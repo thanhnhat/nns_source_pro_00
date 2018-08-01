@@ -504,6 +504,38 @@ form.woocommerce-ordering .select2-container--default {
 a.added_to_cart.wc-forward {
     border-radius: 5px;
 }
+.footer-column-2 {
+  text-align: center;
+}
+.footer-column-3 {
+  text-align: right;
+}
+.footer-column-2 p, .footer-column-3 p {
+  margin: 0;
+}
+
+@media (max-width: 1025px) and (min-width: 768px) {
+  .site-footer .col-full {
+    padding: 0;
+  }
+  .footer-column-1 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid;
+    margin-top: 0;
+    padding-bottom: 10px;
+  }
+  .footer-column-2 {
+    width: 50%;
+    margin-top: 20px;
+  }
+  .footer-column-3 {
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+}
 
 
 

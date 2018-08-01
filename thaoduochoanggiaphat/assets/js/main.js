@@ -6,9 +6,7 @@
 
 	$('body').on("updated_wc_div",function(){
 		customInputQuantity();
-		$('tr.cart-subtotal > th').text('Tạm tính');
 	});
-	$('tr.cart-subtotal > th').text('Tạm tính');
 	$('select[name="orderby"]').select2({
 	  minimumResultsForSearch: Infinity,
 	  containerCssClass:'orderby'

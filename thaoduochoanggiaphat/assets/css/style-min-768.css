@@ -40,27 +40,21 @@
         padding-bottom: 1.618em !important;
     }
     .footer-column-3 {
-        width: 30%;
+        width: 33.333%;
         float: right;
-        height: 130px;
-        /*border-left: 1px solid white;*/
-        /*padding-left: 20px;*/
-        margin-right: 85px;
         margin-top: 5px;
     }
 
     .footer-column-2 {
         margin-top: 5px;
-        width: 30%;
-        float: right;
-        /*border-left: 1px solid white;*/
-        /*padding-left: 20px;*/
+        width: 33.333%;
+        float: left;
     }
 
     .footer-column-1 {
         font-size: 15px;
         margin-top: 22px;
-        width: 30%;
+        width: 33.333%;
         float: left;
     }
 
@@ -189,9 +183,6 @@
         text-align: right;
     }
 
-    .footer-column-3 {
-        text-align: right;
-    }
     .posted-on {
         margin-top: -25px;
         float: right;
